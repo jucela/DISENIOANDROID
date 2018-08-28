@@ -80,7 +80,7 @@
                         android:textColor="@color/letraerror"
                         android:textSize="25sp"
                         android:textStyle="bold"
-                        android:visibility="visible" />
+                        android:visibility="gone" />
                     <android.support.v7.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
