@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "462031527553",
+    "firebase_url": "https://marcacionece2018.firebaseio.com",
+    "project_id": "marcacionece2018",
+    "storage_bucket": "marcacionece2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462031527553:android:067422c54b3d5378",
+        "android_client_info": {
+          "package_name": "com.example.dmorales.evaluacion2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462031527553-rcv13pdri4sv92tg0n63a9gu8fj93shp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dmorales.evaluacion2018",
+            "certificate_hash": "4d0d6ebbc996caac700c65be2f83769a23f73f35"
+          }
+        },
+        {
+          "client_id": "462031527553-uilrp9vu5ud1uoa8cfcqhs6fd327f13m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5rRpFX8pqSUZexoHLD--8VNwY_dkfZNM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462031527553-uilrp9vu5ud1uoa8cfcqhs6fd327f13m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

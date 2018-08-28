@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dmorales.evaluacion2018.fragments.NubeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REPORTE DE REGISTROS"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/nube_txtNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total enviados:"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin5dp"
+            android:textColor="@color/colorAccent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="6dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/accent">
+                    <Spinner
+                        android:id="@+id/sp_dia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fechas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="391dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin5dp">
+
+                <Button
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Buscar" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@color/colorAccent">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:text="DNI"
+                    />
+                <TextView
+                    android:layout_weight="4.5"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:text="NOMBRES Y APELLIDOS"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:text="AULA"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:textAlignment="center"
+                    android:text="Nro BUNGALOW"
+                    />
+                <TextView
+                    android:layout_weight="1.6"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:textAlignment="center"
+                    android:text="RESPONS. BUNGALOW"
+                    />
+                <TextView
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="FECHA"
+                    />
+                <TextView
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:textAlignment="center"
+                    android:text="INGRESO LOCAL"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textColor="@color/icons"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:text="SALIDA LOCAL"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/nube_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

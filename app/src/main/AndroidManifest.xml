@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dmorales.evaluacion2018">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_asistencia"
+        android:label="ASISTENCIA"
+        android:roundIcon="@drawable/logo_asistencia"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activities.MainActivity2"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/app_name2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activities.MainActivity3"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/app_name3"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activities.MainActivity6"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/app_name6"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.CargarActivity" />
+    </application>
+
+</manifest>
